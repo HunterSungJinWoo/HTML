@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap');
-
-*{box-sizing: border-box;
-margin: 0;
-padding: 0;
-background-color: #24252A;
-}
-
 *{
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -18,33 +11,41 @@ header {
   display: flex;
   justify-content: flex;
   align-items: center;
-  padding: 20px 10%;
-  width: 100%;
-  height: auto;
+  padding: 0;
+  background-color: #24252A;
+  line-height: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
 }
 
 .logo{
-  padding: 0px 20px;
   order: 0;
 }
 
-.nav {
-  order: 1;
+.Ru{
+  font-size: 13px;
+  width: 10px; 
+  height: 10px;
+  left:85%;
+  position:absolute;
+  margin-top:-12px;
+  padding: 27px 0px;
 }
 
-.cta{
-  order: 3;
-  justify-content: flex;
+.nav {
+  order: 2;
 }
+
+
 .nav_links{
   list-style: none;
-  padding: 0px 50px;
-  justify-content: flex;
-  align-items:center;
   display: flex;
 }
+
 .nav_links li{
-  display: inline-block;
+ 
   padding: 0px 20px;
 }
 .nav_links LI:nth-child(1){
@@ -60,7 +61,6 @@ header {
 }
 
 button {
-  margin-left: 80px;
   padding: 9px 25px;
   background-color: rgba(0,136,169,1);
   border: none;
@@ -75,50 +75,72 @@ button:hover {
   background-color: rgba(0,136,169,0.8);
 }
 
-.footr{
-  display: block; 
-  align-items:center;
-  list-style: none;
-  padding: 400px 75px;
-  justify-content: flex;
-  align-items:center;
-  display: flex;
-  margin: 50px;
-}
-.art1{
-  display: flex; 
-  align-items: flex;
-  justify-content: flex;
-  display: flex;
+.pod1{
+  color: #222;
+  font-size: 25px;
+  padding: 0px 200px;
 }
 
-.introA{
-  padding: 600px 0px;
-}
-
-
-.Eng{
-  width: 25px; 
-  height: 25px;
-  order: 2;
-}
-
-.Ru{
-  width: 25px; 
-  height: 25px;
-  order: 2;
-}
-
-.fit{
-  font-weight: 400;
+#pod1{
+  color: #222;
   font-size: 40px;
-  padding: 15px 45%;
-}
-#fit{
-  font-weight: 400;
-  font-size: 30px;
+  padding: 0px 170px;
 }
 
+.pro{
+  color: #222;
+  font-size: 25px;
+  padding: 40px 180px;
+  position: absolute;
+  top: 73%;
+  left: 48%;
+  transform: translate(-50%, -50%)
+}
+#pro{
+  color: #222;
+  font-size: 25px;
+  padding: 40px 180px;
+  position: absolute;
+  top: 65%;
+  left: 48%;
+  transform: translate(-50%, -50%)
+}
+.bottom-btn1{
+  margin-top: 10px;
+  margin: 10px;
+  margin-left: -50px;
+  float: left;
+}
+.bottom-btn2{
+  margin-top: 10px;
+  margin: 10px;
+  margin-right: -50px;
+  float: right;
+}
+
+#bottom-btn1{
+  margin-top: 10px;
+  margin: 10px;
+  margin-left: 0px;
+  float: left;
+}
+#bottom-btn2{
+  margin-top: 10px;
+  margin: 10px;
+  margin-right: 220px;
+  float: right;
+}
+
+
+.banana_img{
+  display: inline-flex;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  float: right;
+}
 
 /*This is for the animation in the banana page */
 
@@ -157,16 +179,20 @@ button:hover {
   overflow: hidden;
   position: absolute;
   width: 100%;
+  color: #222;
 }
 
 .animated-title > div div {
   font-size: 10vmin;
   padding: 2vmin 0;
   position: absolute;
+  color: #222;
 }
 
 .animated-title > div div span {
   display: block;
+  color: #222;
+  font-size: 40px;
 }
 
 .animated-title > div.text-top {
@@ -183,7 +209,8 @@ button:hover {
 }
 
 .animated-title > div.text-top div span:first-child {
-  color: #767676;
+  color: #222;
+  font-size: 40px;
 }
 
 .animated-title > div.text-bottom {
@@ -197,3 +224,4 @@ button:hover {
   top: 0;
   transform: translate(0, -100%);
 }
+
