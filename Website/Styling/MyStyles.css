@@ -1,218 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap');
-*{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
 }
 
 header {
-  padding: 0px 1%;
-  background-color: #24252A;
-  line-height: 25px;
-  border-radius: 6px;
-  overflow: hidden;
-  position: fixed;
-  left: 15%;
-  top: 0;
-  display: block;
+    padding: 0px 1%;
+    background-color: #24252a;
+    line-height: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: fixed;
+    left: 15%;
+    top: 0;
+    display: block;
 }
 
-.logo{
-  order: 0;
+.logo {
+    order: 0;
 }
 
 .nav {
-  order: 1;
+    order: 1;
 }
 
-.Ru{
-  order: 2;
+.Ru {
+    order: 2;
 }
 
-.nav_links{
-  list-style: none;
-  display: flex;
+.nav_links {
+    list-style: none;
+    display: flex;
+    padding: 0;
 }
-
-.nav_links li{
-  padding: 0px 20px;
-}
-.nav_links LI:nth-child(1){
-  padding: 0 20px 0 0 ;
+.nav_links li {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav_links li a {
-  transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .nav_links li a:hover {
-  color: #0088a9
+    color: #0088a9;
 }
 
 button {
-  padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
-  border: none;
-  border-radius: 50px;
-  cursor:pointer;
-  transition: all 0.3s ease 0s;
-  justify-content: flex;
-  display: flex;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    justify-content: flex;
+    display: flex;
 }
 
 button:hover {
-  background-color: rgba(0,136,169,0.8);
+    background-color: rgba(0, 136, 169, 0.8);
 }
 
-.pod1{
-  color: #222;
-  font-size: 25px;
-  padding: 0px 200px;
+.pod1 {
+    color: #222;
+    font-size: 25px;
+    padding: 0px 200px;
 }
 
-#pod1{
-  color: #222;
-  font-size: 40px;
-  padding: 0px 200px;
+#pod1 {
+    color: #222;
+    font-size: 40px;
+    padding: 0px 200px;
 }
 
-.pro{
-  color: #222;
-  font-size: 25px;
-  padding: 40px 180px;
-  position: absolute;
-  top: 73%;
-  left: 48%;
-  transform: translate(-50%, -50%)
+.pro {
+    color: #222;
+    font-size: 25px;
+    padding: 40px 180px;
+    position: absolute;
+    top: 73%;
+    left: 48%;
+    transform: translate(-50%, -50%);
 }
-#pro{
-  color: #222;
-  font-size: 25px;
-  padding: 40px 180px;
-  position: absolute;
-  top: 65%;
-  left: 48%;
-  transform: translate(-50%, -50%)
+#pro {
+    color: #222;
+    font-size: 25px;
+    padding: 40px 180px;
+    position: absolute;
+    top: 65%;
+    left: 48%;
+    transform: translate(-50%, -50%);
 }
-.bottom-btn1{
-  margin-top: 10px;
-  margin: 10px;
-  margin-left: -50px;
-  float: left;
+.bottom-btn1 {
+    margin-top: 10px;
+    margin: 10px;
+    margin-left: -50px;
+    float: left;
 }
-.bottom-btn2{
-  margin-top: 10px;
-  margin: 10px;
-  margin-right: -50px;
-  float: right;
-}
-
-#bottom-btn1{
-  margin-top: 10px;
-  margin: 10px;
-  margin-left: 0px;
-  float: left;
-}
-#bottom-btn2{
-  margin-top: 10px;
-  margin: 10px;
-  margin-right: 220px;
-  float: right;
+.bottom-btn2 {
+    margin-top: 10px;
+    margin: 10px;
+    margin-right: -50px;
+    float: right;
 }
 
+#bottom-btn1 {
+    margin-top: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    float: left;
+}
+#bottom-btn2 {
+    margin-top: 10px;
+    margin: 10px;
+    margin-right: 220px;
+    float: right;
+}
 
-.banana_img{
-  display: inline-flex;
-  align-items: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  float: right;
+.banana_img {
+    display: inline-flex;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    float: right;
 }
 
 /*This is for the animation in the banana page */
 
 @keyframes showTopText {
-  0% {
-    transform: translate3d(0, 100%, 0);
-  }
-  40%, 60% {
-    transform: translate3d(0, 50%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(0, 50%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
 }
 @keyframes showBottomText {
-  0% {
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
 }
 .animated-title {
-  color: #222;
-  font-family: "Montserrat", sans-serif;
-  height: 60vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    height: 60vmin;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
 }
 
 .animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  color: #222;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    color: #222;
 }
 
 .animated-title > div div {
-  font-size: 10vmin;
-  padding: 2vmin 0;
-  position: absolute;
-  color: #222;
+    font-size: 10vmin;
+    padding: 2vmin 0;
+    position: absolute;
+    color: #222;
 }
 
 .animated-title > div div span {
-  display: block;
-  color: #222;
-  font-size: 40px;
+    display: block;
+    color: #222;
+    font-size: 40px;
 }
 
 .animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
-  top: 0;
+    border-bottom: 1vmin solid #000;
+    top: 0;
 }
 
 .animated-title > div.text-top div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
 }
 
 .animated-title > div.text-top div span:first-child {
-  color: #222;
-  font-size: 40px;
+    color: #222;
+    font-size: 40px;
 }
 
 .animated-title > div.text-bottom {
-  bottom: 0;
+    bottom: 0;
 }
 
 .animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
 }
-
