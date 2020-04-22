@@ -1,56 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
+
+
+
+/*everything */
 * {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: auto;
     color: #edf0f1;
     text-decoration: none;
+    font-size:1.5vw;
+    font-size-adjust:auto;
 }
 
+
+
+
+/*Navigation */
 header {
-    padding: 0px 1%;
+    padding: 0% 1%;
     background-color: #24252a;
-    line-height: 25px;
-    border-radius: 6px;
+    line-height: auto;
+    border-radius: 16px;
     overflow: hidden;
     position: fixed;
-    left: 15%;
     top: 0;
-    display: block;
+    z-index: 1;
+    margin: auto;  
 }
-
-.logo {
-    order: 0;
-}
-
-.nav {
-    order: 1;
-}
-
-.Ru {
-    order: 2;
-}
-
 .nav_links {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 0%;
 }
 .nav_links li {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .nav_links li a {
     transition: all 0.3s ease 0s;
 }
-
 .nav_links li a:hover {
     color: #0088a9;
 }
+.logo {
+    order: 0;
+}
+.nav {
+    order: 1;
+}
+.Ru {
+    order: 2;
+}
 
+
+
+
+
+
+/*New Gen Banana Pad Image */
+.banana_img1 {
+    display: inline-flex;
+    display: block;
+    margin-top: 5%;
+    max-width: 1900px;
+    width: 100%;
+}
+.product {
+    position: relative;
+    flex-direction: column;
+    border: solid 1px red;
+  }
+/*Its discription */
+.pro {
+    color: #222;
+    font-size:3vw;
+    font-size-adjust:auto; 
+    position: absolute;
+    top: 55%;
+    left: 40%; 
+}
+#pro {
+    color: #222;
+    font-size:3vw;
+    font-size-adjust:auto;
+}
+.bottom-btn1 {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2%; 
+    margin-left: -10%;
+}
+.bottom-btn2 {
+    margin-top: 10px;
+    float: left;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Old Gen Banana Pad Image */
+.banana_img {
+    display: inline-flex;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    width: 55%;
+    float: right;
+}
+.product1 {
+  position: relative;
+  flex-direction: column;
+  border: solid 1px blue;
+}
+/*Its discription */
+.pod1 {
+    color: #222;
+    font-size:5vw;
+    font-size-adjust:auto;
+    float: Left;
+    margin-left: 7%;
+}
+#pod1 {
+    color: #222;   
+    font-size:3vw;
+    font-size-adjust:auto;
+    float: Left;
+    margin-left: 7.5%;
+}
+#podP {
+    color: #222;   
+    font-size:3vw;
+    font-size-adjust:auto;
+    margin-left: 35%;
+}
+#bottom-btn1 {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2%; 
+    margin-left: 7%;
+}
+#bottom-btn2 {
+    margin-top: 10px;
+    float: left;
+    margin-left: auto;
+}
+
+
+
+
+
+/*ALL The Buttons of the page */
 button {
-    padding: 9px 25px;
+    padding: 5px 10px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
@@ -58,77 +180,41 @@ button {
     transition: all 0.3s ease 0s;
     justify-content: flex;
     display: flex;
+    font-size:2.3vw;
+    font-size-adjust:auto;
 }
-
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-.pod1 {
-    color: #222;
-    font-size: 25px;
-    padding: 0px 200px;
-}
 
-#pod1 {
-    color: #222;
-    font-size: 40px;
-    padding: 0px 200px;
-}
 
-.pro {
-    color: #222;
-    font-size: 25px;
-    padding: 40px 180px;
-    position: absolute;
-    top: 73%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-}
-#pro {
-    color: #222;
-    font-size: 25px;
-    padding: 40px 180px;
-    position: absolute;
-    top: 65%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-}
-.bottom-btn1 {
-    margin-top: 10px;
-    margin: 10px;
-    margin-left: -50px;
-    float: left;
-}
-.bottom-btn2 {
-    margin-top: 10px;
-    margin: 10px;
-    margin-right: -50px;
-    float: right;
-}
 
-#bottom-btn1 {
-    margin-top: 10px;
-    margin: 10px;
-    margin-left: 0px;
-    float: left;
-}
-#bottom-btn2 {
-    margin-top: 10px;
-    margin: 10px;
-    margin-right: 220px;
-    float: right;
-}
 
-.banana_img {
-    display: inline-flex;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    float: right;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*This is for the animation in the banana page */
 
@@ -155,14 +241,13 @@ button:hover {
 .animated-title {
     color: #222;
     font-family: "Montserrat", sans-serif;
-    height: 60vmin;
+    height: 100vmin;
     left: 50%;
+    top: 42%;
     position: absolute;
-    top: 50%;
     transform: translate(-50%, -50%);
-    width: 90vmin;
+    width: 70vmin;
 }
-
 .animated-title > div {
     height: 50%;
     overflow: hidden;
@@ -170,10 +255,9 @@ button:hover {
     width: 100%;
     color: #222;
 }
-
 .animated-title > div div {
-    font-size: 10vmin;
-    padding: 2vmin 0;
+    font-size:4vw;
+    font-size-adjust:auto;
     position: absolute;
     color: #222;
 }
@@ -181,11 +265,13 @@ button:hover {
 .animated-title > div div span {
     display: block;
     color: #222;
-    font-size: 40px;
+    font-size:3vw;
+    font-size-adjust:auto;
 }
 
 .animated-title > div.text-top {
-    border-bottom: 1vmin solid #000;
+    border-bottom: 0.5vw solid #000;
+    display: block;
     top: 0;
 }
 
@@ -197,18 +283,18 @@ button:hover {
     transform: translate(0, 100%);
 }
 
-.animated-title > div.text-top div span:first-child {
+.animated-title > div.text-top div div:first-child {
     color: #222;
-    font-size: 40px;
+    font-size:3vw;
+    font-size-adjust:auto;
+    position: absolute;
 }
-
 .animated-title > div.text-bottom {
     bottom: 0;
 }
-
 .animated-title > div.text-bottom div {
     animation: showBottomText 0.5s;
-    animation-delay: 1.75s;
+    animation-delay: 1.8s;
     animation-fill-mode: forwards;
     top: 0;
     transform: translate(0, -100%);
