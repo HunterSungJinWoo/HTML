@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
 
-
-
 /*everything */
 * {
     font-family: "Montserrat", sans-serif;
     font-weight: auto;
     color: #edf0f1;
     text-decoration: none;
-    font-size:1.5vw;
+    font-size:2vw;
     font-size-adjust:auto;
 }
-
-
-
 
 /*Navigation */
 header {
@@ -25,16 +20,22 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    margin: auto;  
+    margin: auto; 
+    left: 50%;
+    transform: translateX(-50%); 
+
 }
 .nav_links {
     list-style: none;
     display: flex;
     padding: 0%;
+    font-size:1vw;
+    font-size-adjust:auto;
 }
 .nav_links li {
     padding-left: 20px;
     padding-right: 20px;
+
 }
 .nav_links li a {
     transition: all 0.3s ease 0s;
@@ -42,20 +43,13 @@ header {
 .nav_links li a:hover {
     color: #0088a9;
 }
-.logo {
-    order: 0;
-}
+
 .nav {
     order: 1;
 }
 .Ru {
     order: 2;
 }
-
-
-
-
-
 
 /*New Gen Banana Pad Image */
 .banana_img1 {
@@ -68,7 +62,6 @@ header {
 .product {
     position: relative;
     flex-direction: column;
-    border: solid 1px red;
   }
 /*Its discription */
 .pro {
@@ -96,14 +89,28 @@ header {
     margin-left: auto;
 }
 
+#info{
+    margin-top: 70%;
+    background-color: #24252a;
+}
 
-
-
-
-
-
-
-
+#info div{
+    color: #222;
+    font-size:1vw;
+    font-size-adjust:auto; 
+    z-index: 1;
+    display: flex;
+    padding: 0% 10%;
+    color: #edf0f1;
+}
+#info a{
+    color: #222;
+    font-size:1vw;
+    font-size-adjust:auto; 
+    z-index: 1;
+    display: flex;
+    padding: 0% 10%;
+}
 
 
 
@@ -131,7 +138,6 @@ header {
 .product1 {
   position: relative;
   flex-direction: column;
-  border: solid 1px blue;
 }
 /*Its discription */
 .pod1 {
@@ -168,6 +174,54 @@ header {
 
 
 
+/*Old Gen 2ndBanana Pad Image */
+.banana_img2 {
+    display: inline-flex;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    width: 55%;
+    float: left;
+}
+.product2 {
+  position: relative;
+  flex-direction: column;
+}
+/*Its discription */
+.pod2 {
+    color: #222;
+    font-size:3.5vw;
+    font-size-adjust:auto;
+    float: right;
+    margin-right: 7%;
+}
+#pod2 {
+    color: #222;   
+    font-size:3vw;
+    font-size-adjust:auto;
+    float: Right;
+    margin-right: 7.5%;
+}
+#pod3 {
+    color: #222;   
+    font-size:3vw;
+    font-size-adjust:auto;
+    margin-left: 35%;
+}
+#bottom-btn11 {
+    margin-top: 10px;
+    float: left;
+    margin-right: 2%; 
+    margin-left: 7%;
+}
+#bottom-btn22 {
+    margin-top: 10px;
+    float: left;
+    margin-left: auto;
+}
+
 
 
 /*ALL The Buttons of the page */
@@ -188,6 +242,9 @@ button:hover {
 }
 
 
+
+ 
+  
 
 
 
