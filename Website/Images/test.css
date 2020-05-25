@@ -1,77 +1,41 @@
-/*This is for the animation in the banana page */
 
-@keyframes showTopText {
-  0% {
-    transform: translate3d(0, 100%, 0);
-  }
-  40%, 60% {
-    transform: translate3d(0, 50%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+.reg-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
 }
-@keyframes showBottomText {
-  0% {
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.animated-title {
-  color: #222;
-  font-family: "Montserrat", sans-serif;
-  height: 60vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
-}
-
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
+.form input {
+  outline: 0;
+  background: #f2f2f2;
   width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+}
+.form button {
+  text-transform: uppercase;
+  background: rgba(0, 136, 169, 1);
+  width: 100%;
+  border-radius: 50px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover{
+  background:rgba(0, 136, 169, 0.8);
 }
 
-.animated-title > div div {
-  font-size: 10vmin;
-  padding: 2vmin 0;
-  position: absolute;
-}
 
-.animated-title > div div span {
-  display: block;
-}
-
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
-  top: 0;
-}
-
-.animated-title > div.text-top div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
-}
-
-.animated-title > div.text-top div span:first-child {
-  color: #767676;
-}
-
-.animated-title > div.text-bottom {
-  bottom: 0;
-}
-
-.animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
-}

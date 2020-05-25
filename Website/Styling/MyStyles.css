@@ -1,10 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
 
+/*the register zone */
+
+
+.reg-page {
+    max-width: 60%;
+    padding: 5% 0 0;
+    margin: auto;
+    height: auto;
+  }
+  .form {
+    position: relative;
+    border-radius: 40px;
+    max-width: 50%;
+    z-index: 0;
+    background: #FFFFFF;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .form input {
+    background: #f2f2f2;
+    width: 90%;
+    border: 0;
+    margin: 0 0 35px;
+    padding: 20px;
+  }
+.form select{
+    width: 100%;
+    background: #f2f2f2;
+    border: 0;
+    margin: auto;
+    padding: 20px;
+    color:#666666;
+    letter-spacing: -0.00933333em;
+
+}
+.form select option{
+    color:#1a1a1a;
+}
+
+  .form button {
+    background: rgba(0, 136, 169, 1);
+    width: 50%;
+    border-radius: 50px;
+    padding: 15px;
+    color: #edf0f1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: auto;
+    text-decoration: none;
+    font-size:2vw;
+  }
+  .form button:hover{
+    background:rgba(0, 136, 169, 0.8);
+  }
+
+  
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*everything */
 * {
     font-family: "Montserrat", sans-serif;
     font-weight: auto;
-    color: #edf0f1;
     text-decoration: none;
     font-size:2vw;
     font-size-adjust:auto;
@@ -37,7 +136,9 @@ header {
     padding-right: 20px;
 
 }
-.nav_links li a {
+.nav_links li a 
+{
+    color: #edf0f1;
     transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
@@ -53,45 +154,29 @@ header {
 
 /*New Gen Banana Pad Image */
 .banana_img1 {
-    display: inline-flex;
     display: block;
-    margin-top: 5%;
+    margin-top: -1%;
     max-width: 1900px;
-    width: 100%;
-}
-.product {
-    position: relative;
-    flex-direction: column;
-  }
-/*Its discription */
-.pro {
-    color: #222;
-    font-size:3vw;
-    font-size-adjust:auto; 
-    position: absolute;
-    top: 55%;
-    left: 40%; 
-}
-#pro {
-    color: #222;
-    font-size:3vw;
-    font-size-adjust:auto;
-}
-.bottom-btn1 {
-    margin-top: 10px;
-    float: left;
-    margin-right: 2%; 
-    margin-left: -10%;
-}
-.bottom-btn2 {
-    margin-top: 10px;
-    float: left;
-    margin-left: auto;
+    width: 100.5%;
 }
 
+
+
+
+
+
+
+
+
+/*Its discription */
+
 #info{
-    margin-top: 70%;
+    position: absolute;
     background-color: #24252a;
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+    display:none;
 }
 
 #info div{
@@ -126,7 +211,6 @@ header {
 
 /*Old Gen Banana Pad Image */
 .banana_img {
-    display: inline-flex;
     display: block;
     margin-top: auto;
     margin-left: auto;
@@ -160,17 +244,7 @@ header {
     font-size-adjust:auto;
     margin-left: 35%;
 }
-#bottom-btn1 {
-    margin-top: 10px;
-    float: left;
-    margin-right: 2%; 
-    margin-left: 7%;
-}
-#bottom-btn2 {
-    margin-top: 10px;
-    float: left;
-    margin-left: auto;
-}
+
 
 
 
@@ -195,7 +269,7 @@ header {
     font-size:3.5vw;
     font-size-adjust:auto;
     float: right;
-    margin-right: 7%;
+    margin-right: 8.4%;
 }
 #pod2 {
     color: #222;   
@@ -210,41 +284,42 @@ header {
     font-size-adjust:auto;
     margin-left: 35%;
 }
-#bottom-btn11 {
-    margin-top: 10px;
-    float: left;
-    margin-right: 2%; 
-    margin-left: 7%;
-}
-#bottom-btn22 {
-    margin-top: 10px;
-    float: left;
-    margin-left: auto;
-}
+
+
+
+
+
 
 
 
 /*ALL The Buttons of the page */
-button {
-    padding: 5px 10px;
+
+.bottom-btn1 {
+    padding: 5px 5px;
     background-color: rgba(0, 136, 169, 1);
-    border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     justify-content: flex;
-    display: flex;
     font-size:2.3vw;
     font-size-adjust:auto;
+    margin-top: 10px;
+    float: left;
+    margin-left: 1%;
+    color: #edf0f1;
 }
-button:hover {
+
+.bottom-btn1:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
+.pro .bottom-btn1{
+    font-size-adjust:auto; 
+    position: absolute;
+    top: 60%;
+    left: 40%;  
+}
 
-
- 
-  
 
 
 
@@ -300,7 +375,7 @@ button:hover {
     font-family: "Montserrat", sans-serif;
     height: 100vmin;
     left: 50%;
-    top: 42%;
+    top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 70vmin;
