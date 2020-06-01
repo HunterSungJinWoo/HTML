@@ -7,33 +7,33 @@
     <link rel="stylesheet" type='text/css' media='screen' href='./../Styling/MyStyles.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    body {
+    html {
       background-image: linear-gradient(#22054F, #9065D1, #28CFFD);
+      min-height: 100%
   }
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 100px) {
+ 
+ 
+  @media screen and (max-width: 1000px) {
   .reg-page {
-    max-width: 100%;
+    max-width: 80%;
     font-size:4vw;
-  }
-  .form {
-    font-size:4vw;
-  }
-  .form input {
-    margin: 0 0 auto;
   }
 }
+
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .reg-page {
-    max-width: 160%;
-    font-size:4vw;
+    max-width: 100%;
   }
-  .form {
+  
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
     font-size:4vw;
-  }
 }
+}
+
 </style>
 
 </head>
@@ -62,7 +62,7 @@
         <input type="password" placeholder="Password" id="pass" name="pass"/>
         <input type="text" placeholder="Email address" id="email" name="email"/>
         <select name="Country" required>
-        <option value="Country" disabled selected hidden>Country</option>
+        <option value="" disabled selected hidden>Country</option>
         <option value="Russia">Russia</option>
         <option value="Luxembourg">Luxembourg</option>
         <option value="Portugal">Portugal</option>
@@ -76,7 +76,11 @@
     </div>
 </div>
 
+<div class="">
 
+
+
+</div>
 
 
 

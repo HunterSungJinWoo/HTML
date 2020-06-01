@@ -393,7 +393,6 @@ header {
 
 .animated-title > div.text-top div div:first-child {
     color: #222;
-    font-size:3vw;
     font-size-adjust:auto;
     position: absolute;
 }
@@ -411,39 +410,59 @@ header {
 
 
 
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 3000px){
     .animated-title {
   top:25%;
 }
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2000px){
 .animated-title {
 top:18%;
 }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px){
 .animated-title {
-top:8%;
+top:9%;
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
 .animated-title {
 top:4%;
 }
 }
 
+@media screen and (max-height: 600px){
+    .animated-title {
+    top:20%;
+    }
+    *{
+        font-size:1vw; 
+    }
+    
+    
+    
+    .animated-title > div div span {
+        display: block;
+        color: #222;
+        font-size:3vw;
+        font-size-adjust:auto;
+    }
 
+
+
+
+
+
+    }
 
 
 @media screen and (max-width: 601px) {
     .nav_links{    
      display: none;
-     }
+     } 
 
 
-
-     
     }
