@@ -57,21 +57,9 @@
   }
 
 
-
-/*everything */
-* {
-    font-family: "Montserrat", sans-serif;
-    font-weight: auto;
-    text-decoration: none;
-    font-size:2vw;
-    font-size-adjust:auto;
-    padding: auto;
-}
-
 /*Navigation */
 header {
     background-color: #24252a;
-    line-height: auto;
     border-radius: 20px;
     overflow: hidden;
     position: fixed;
@@ -85,7 +73,7 @@ header {
     display: flex;
     padding: 0%;
     font-size:0.5vw;
-    font-size-adjust:auto;
+    
 }
 .nav_links li {
     padding-left: 20px;
@@ -115,7 +103,6 @@ header {
 .banana_img1 {
     display: flex;
     margin-top: -1%;
-    max-width: auto;
     width: 100%;
     z-index: 3;
 }
@@ -134,7 +121,6 @@ header {
 #info div{
     color: #222;
     font-size:1vw;
-    font-size-adjust:auto; 
     z-index: 1;
     display: flex;
     padding: 0% 10%;
@@ -142,8 +128,7 @@ header {
 }
 #info a{
     color: #222;
-    font-size:1vw;
-    font-size-adjust:auto; 
+    font-size:1vw; 
     z-index: 1;
     display: flex;
     padding: 0% 10%;
@@ -183,24 +168,17 @@ header {
 /*Its discription */
 .pod1 {
     color: #222;
-    font-size:5vw;
-    font-size-adjust:auto;
+    font-size:3.5vw;
     float: Left;
-    margin-left: 7%;
+    margin-left: 12%;
 }
-#pod1 {
+.pod1_ {
     color: #222;   
     font-size:3vw;
-    font-size-adjust:auto;
     float: Left;
     margin-left: 7.5%;
 }
-#podP {
-    color: #222;   
-    font-size:3vw;
-    font-size-adjust:auto;
-    margin-left: 35%;
-}
+
 
 
 
@@ -221,25 +199,17 @@ header {
 .pod2 {
     color: #222;
     font-size:3.5vw;
-    font-size-adjust:auto;
     float: right;
     margin-right: 8.4%;
     
 }
-#pod2 {
+.pod21 {
     color: #222;   
     font-size:3vw;
-    font-size-adjust:auto;
     float: Right;
     margin-right: 7.5%;
 }
-.pod3 {
-    color: #222;   
-    font-size:3vw;
-    font-size-adjust:auto;
-    margin-left: 35%;
-    
-}
+
 
 
 
@@ -256,22 +226,14 @@ header {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    justify-content: flex;
-    font-size:2.3vw;
-    font-size-adjust:auto;
     color: #edf0f1;
+    
 }
-:nth-child(2) .bottom-btn1 {
-    padding: 5px 5px;
-    background-color: rgba(0, 136, 169, 1);
-    border-radius: 50px;
+
+.bottom-btn2 {
+    color: rgba(0, 136, 169, 1);
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    justify-content: flex;
-    font-size:2.3vw;
-    font-size-adjust:auto;
-    margin-left: 1%;
-    color: #edf0f1;
 }
 
 .bottom-btn {
@@ -281,8 +243,6 @@ header {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     justify-content: flex;
-    font-size:2.3vw;
-    font-size-adjust:auto;
     margin-top: 15%;
     float: left;
     margin-left: 1%;
@@ -349,7 +309,6 @@ header {
 }
 .animated-title {
     color: #222;
-    font-family: "Montserrat", sans-serif;
     left: 32%;
     position: absolute;
     overflow: hidden;
@@ -365,7 +324,6 @@ header {
 }
 .animated-title > div div {
     font-size:4vw;
-    font-size-adjust:auto;
     position: absolute;
     color: #222;
 }
@@ -374,7 +332,6 @@ header {
     display: block;
     color: #222;
     font-size:3vw;
-    font-size-adjust:auto;
 }
 
 .animated-title > div.text-top {
@@ -393,7 +350,6 @@ header {
 
 .animated-title > div.text-top div div:first-child {
     color: #222;
-    font-size-adjust:auto;
     position: absolute;
 }
 .animated-title > div.text-bottom {
@@ -438,31 +394,10 @@ top:4%;
     .animated-title {
     top:20%;
     }
-    *{
-        font-size:1vw; 
-    }
-    
-    
-    
     .animated-title > div div span {
         display: block;
         color: #222;
         font-size:3vw;
-        font-size-adjust:auto;
+    }
     }
 
-
-
-
-
-
-    }
-
-
-@media screen and (max-width: 601px) {
-    .nav_links{    
-     display: none;
-     } 
-
-
-    }
