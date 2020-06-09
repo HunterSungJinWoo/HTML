@@ -8,37 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
-
-
 .iP_img {
     display: block;
-    width: 50%;
     float: right; 
+    max-width: 50ch;
+    width: 25ch;
 }
 
 .iP_img2 {
     display: block;
-    width: 50%;
+    max-width: 50ch;
+    width: 25ch;
     float: left;
 }
 
 .allin > .iPhone {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
   display: block;
   margin: auto;
-  
+  overflow: hidden;
+  max-width: 50ch;
 }
-
-
-
+/*  50ch  This unit represents the width, or more precisely the advance measure, of the glyph 
+'0' (zero, the Unicode character U+0030) in the element's font.*/
 
 .iPhone > div {
   background-color: #f1f1f1;
   float: left;
-  
+  overflow: hidden;
 }
 
 /*everything */
@@ -48,20 +44,11 @@
     font-size:1.7vw;
 }
 
-.pod1 {
-    color: #222;
-    font-size:3.5vw;
-    float: Left;
-    margin-left: 12%;
-    max-width: 600px;
+.pod1
+{
+  font-size:2.5vw;
 }
-.pod1_ {
-    color: #222;   
-    font-size:3vw;
-    float: Left;
-    margin-left: 7.5%;
-    max-width: 600px;
-}
+
   </style>
 </head>
 <body>
