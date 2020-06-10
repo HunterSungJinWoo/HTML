@@ -1,135 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>iPhone</title>
-    <link rel="stylesheet" type='text/css' media='screen' href='./../Styling/MyStyles.css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>iPhone</title>
+        <link rel="stylesheet" type='text/css' media='screen' href='./../Styling/MyStyles.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .iP_img {
+                display: block;
+                width: 50%;
+            }
+            .allin > .iPhone {
+                display: flex;
+                margin: auto;
+                max-width: 60%;
+            }
+            .leftSided {
+                flex-direction: row;
+            }
+            .rightSided {
+                flex-direction: row-reverse;
+            }
 
-.iP_img {
-    display: block;
-    float: right; 
-    max-width: 50ch;
-    width: 25ch;
-}
+            .iPhone > div {
+                background-color: #f1f1f1;
+                width: 50ch;
+                max-width: 50%;
+            }
+            /*everything */
+            * {
+                font-family: "Montserrat", sans-serif;
+                text-decoration: none;
+                font-size: 1.7vw;
+            }
 
-.iP_img2 {
-    display: block;
-    max-width: 50ch;
-    width: 25ch;
-    float: left;
-}
+            .pod1 {
+                font-size: 2.5vw;
+            }
 
-.allin > .iPhone {
-  display: block;
-  margin: auto;
-  overflow: hidden;
-  max-width: 50ch;
-}
-/*  50ch  This unit represents the width, or more precisely the advance measure, of the glyph 
-'0' (zero, the Unicode character U+0030) in the element's font.*/
+            .allin {
+                margin-top: 3%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-.iPhone > div {
-  background-color: #f1f1f1;
-  float: left;
-  overflow: hidden;
-}
+            html {
+                min-height: 100%;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: rgb(232, 232, 232);
+            }
+        </style>
+    </head>
 
-/*everything */
-* {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    font-size:1.7vw;
-}
+    <body>
+        <header>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="Home_eng.html">iBanana</a></li>
+                    <li><a href="banana_eng.html">iPad</a></li>
+                    <li><a href="banana_phone_eng.html">iPhone</a></li>
+                    <li><a href="banana_watch_eng.html">Watch</a></li>
+                    <li><a href="support_eng.html">Support</a></li>
+                    <li><a href="register.html">About</a></li>
+                    <li><a href="banana_ru.html">Ru</a></li>
+                </ul>
+            </nav>
+        </header>
 
-.pod1
-{
-  font-size:2.5vw;
-}
-.allin{
-  margin-top: 3%;
-}
+        <div class="allin">
+            <div class="iPhone product leftSided">
+                <img src="./../Images/iphone_se.jpg" alt="*" class="iP_img" />
+                <div>
+                    <h2 class="pod1">iPhone SE</h2>
+                    <div class="pod1_">
+                        Lots to love.<br />
+                        Less to spend.<br />
+                        $399<br />
+                        <a class="bottom-btn1">Buy</a>
+                        <a class="bottom-btn2">Learn more ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="iPhone product rightSided">
+                <img src="./../Images/iphone_11.jpg" alt="*" class="iP_img" />
+                <div>
+                    <h2 class="pod1">iPhone 11</h2>
+                    <div class="pod1_">
+                        Just the<br />
+                        right amount<br />
+                        of everything.<br />
+                        $499<br />
+                        <a class="bottom-btn1">Buy</a>
+                        <a class="bottom-btn2">Learn more </a>
+                    </div>
+                </div>
+            </div>
 
-
-html {
-    min-height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-color: rgb(232, 232, 232);
-}
-
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-        <ul class="nav_links">
-            <li><a href="Home_eng.html">iBanana</a></li>
-            <li><a href="banana_eng.html">iPad</a></li>
-            <li><a href="banana_phone_eng.html">iPhone</a></li>
-            <li><a href="banana_watch_eng.html">Watch</a></li>
-            <li><a href="support_eng.html">Support</a></li>
-            <li><a href="register.html">About</a></li>
-            <li><a href="banana_ru.html">Ru</a></li> 
-        </ul>
-    </nav>
- </header>
-
-<div class="allin">
-<div class="iPhone">
-<div class="product">
-  <img src="./../Images/iphone_se.jpg" alt="*" class="iP_img">
-    <h2 class="pod1">iPhone SE</h2>
-      <div class="pod1_">
-        Lots to love.<br>
-        Less to spend.<br>
-        $399<br>
-            <a class="bottom-btn1">Buy</a>
-            <a class="bottom-btn2">Learn more ></a>
-      </div>
-    </div>
-<br>
-</div>
-<!--
-  coment
--->
-<div class="iPhone">
-<div class="product">
-  <img src="./../Images/iphone_11.jpg" alt="*" class="iP_img2">
-    <h2 class="pod1">iPhone 11 </h2>
-      <div class="pod1_">
-          Just the<br>
-          right amount<br>
-          of everything.<br>
-          $499<br>
-            <a class="bottom-btn1">Buy</a>
-            <a class="bottom-btn2">Learn more ></a>
-      </div>
-    </div><br>
-  </div>
-
-  <div class="iPhone">
-<div class="product">
-  <img src="./../Images/iphone_11_pro.jpg" alt="*" class="iP_img">
-    <h2 class="pod1">iPhone 11 Pro</h2>
-      <div class="pod1_">
-          Pro cameras.<br>
-          Pro display.<br>
-          $699<br>
-            <a class="bottom-btn1">Buy</a>
-            <a class="bottom-btn2">Learn more ></a>
-      </div>
-    </div>
-    <br>
-  </div>
-</div>
-
-
-</body>
+            <div class="iPhone product leftSided">
+                <img src="./../Images/iphone_11_pro.jpg" alt="*" class="iP_img" />
+                <div>
+                    <h2 class="pod1">iPhone 11 Pro</h2>
+                    <div class="pod1_">
+                        Pro cameras.<br />
+                        Pro display.<br />
+                        $699<br />
+                        <a class="bottom-btn1">Buy</a>
+                        <a class="bottom-btn2">Learn more ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
-
