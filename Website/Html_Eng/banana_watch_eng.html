@@ -8,14 +8,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
+.iP_img {
+    display: block;
+    width: 50%;
+}
+.allin > .iPhone {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+}
+.leftSided {
+    flex-direction: row;
+}
+.rightSided {
+    flex-direction: row-reverse;
+}
+
+.iPhone > div {
+    width: 50ch;
+    max-width: 50%;
+}
+/*everything */
+* {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+
+.allin {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p div { 
+    display: block; 
+}
+.title{
+  display: flex;
+  margin-left: 15%;
+  margin-top: 5%;
+  font-size: 3vw;
+}
 
   </style>
 </head>
 <body>
-
-
-
-
 <header>
 <nav>
     <ul class="nav_links">
@@ -31,9 +69,64 @@
 </header>
 
 
+<h1 class="title">
+  The #1 smartwatch in the world.
+  Times two.
+</h1>
+
+<div class="allin">
+  <div class="iPhone leftSided">
+      <img src="./../Images/w5.jpg" alt="*" class="iP_img" />
+      <div>
+          <h2 class="pod1">Watch SERIES 5</h2>
+          <div class="pod1_">
+          <p> 
+            <div> The most advanced Apple Watch yet, </div>
+            <div>featuring the Always-On Retina display, </div>
+            <div>the ECG app, international emergency </div>
+            <div>calling, fall detection, and a built‑in compass.</div>
+            <div>Starting at</div>
+            <div> $399</div>
+
+              <a class="bottom-btn1">Buy</a>
+              <a class="bottom-btn2">Learn more ></a>
+          </div>
+      </div>
+  
+</div>
+  <div class="iPhone rightSided">
+      <img src="./../Images/w3.jpg" alt="*" class="iP_img" />
+      <div>
+          <h2 class="pod1">Watch SERIES 3</h2>
+          <div class="pod1_">
+            <p> 
+              <div>All the core fitness, heart‑monitoring, </div>
+              <div>and connectivity features that make  </div>
+              <div>Apple Watch the ultimate device for </div>
+              <div>a healthy life.</div>
+              <div>Starting at</div>
+              <div>$199</div>
+       
+              <a class="bottom-btn1">Buy</a>
+              <a class="bottom-btn2">Learn more </a>
+          </div>
+      </div>
+  </div>
 
 
 
+  
+    <h1 class="pod1">All styles your hearth desire</h1>
+
+
+
+
+  <div class="iPhone">
+      <img src="./../Images/guc.jpg" alt="*" class="iP_img" />
+      <img src="./../Images/nic.jpg" alt="*" class="iP_img" />
+</div>
+<a class="bottom-btn2">Learn more ></a>
+</div>
 </body>
 </html>
 
