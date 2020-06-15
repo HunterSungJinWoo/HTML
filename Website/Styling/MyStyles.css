@@ -4,7 +4,7 @@
 
 
 .reg-page {
-    max-width: 60%;
+    max-width: 50ch;
     padding: 5% 0 0;
     margin: auto;
     height: auto;
@@ -102,15 +102,13 @@ header {
 /*New Gen Banana Pad Image */
 .banana_img1 {
     display: flex;
-    margin-top: -1%;
-    width: 100%;
+    width: 87ch;
     z-index: 3;
 }
 
 /*Its discription */
 
 #info{
-    position: absolute;
     background-color: #24252a;
     width: 360px;
     padding: 8% 0 0;
@@ -168,15 +166,15 @@ header {
 /*Its discription */
 .pod1 {
     color: #222;
-    font-size:3.5vw;
-    float: Left;
-    margin-left: 12%;
+    font-size:3vw;
+    align-items: center;
+    padding-left: 2%;
 }
 .pod1_ {
     color: #222;   
     font-size:3vw;
-    float: Left;
-    margin-left: 7.5%;
+    align-items: center;
+    padding-left: 2%;
 }
 
 
@@ -234,6 +232,9 @@ header {
     color: rgba(0, 136, 169, 1);
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    border: none;
+    background-color: white;
+    text-decoration: none;
 }
 
 .bottom-btn {
