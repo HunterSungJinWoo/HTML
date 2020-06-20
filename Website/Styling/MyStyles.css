@@ -1,404 +1,269 @@
+/*Font used for the website */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
 
-/*the register zone */
+                    /*Register page styles*/
 
-
-.reg-page {
-    max-width: 50ch;
-    padding: 5% 0 0;
-    margin: auto;
-    height: auto;
-  }
-  .form {
-    position: relative;
-    border-radius: 40px;
-    max-width: 50%;
-    z-index: 0;
-    background: #FFFFFF;
-    margin: auto;
-    padding: 40px;
-    text-align: center;
-  }
-  .form input {
-    background: #f2f2f2;
-    width: 90%;
-    border: 0;
-    margin: 0 0 35px;
-    padding: 20px;
-  }
+.register_page{
+margin: auto;
+height: auto;
+}
+.form {
+position: relative;
+border-radius: 40px;
+max-width: 60%;
+background: #FFFFFF;
+margin: auto;
+padding: 40px;
+text-align: center;
+}
+/*the fill in with personal information zone*/
+.form input {
+background: #f2f2f2;
+width: 90%;
+border: 0;
+margin: 0 0 35px;
+padding: 20px;
+}
+/*the country select buttun*/
 .form select{
-    width: 100%;
-    background: #f2f2f2;
-    border: 0;
-    margin: auto;
-    padding: 20px;
-    color:#666666;
-    letter-spacing: -0.00933333em;
-
+width: 50ch;
+background: #f2f2f2;
+border: 0;
+padding: 20px;
+color:#666666;   
 }
 .form select option{
-    color:#1a1a1a;
+color:#1a1a1a;
+}
+/*submit buttun*/
+.form button {
+background: rgba(0, 136, 169, 1);
+border-radius: 50px;
+padding: 15px;
+color: #edf0f1;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.form button:hover{
+background:rgba(0, 136, 169, 0.6);
 }
 
-  .form button {
-    background: rgba(0, 136, 169, 1);
-    width: 50%;
-    border-radius: 50px;
-    padding: 15px;
-    color: #edf0f1;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    font-weight: auto;
-    text-decoration: none;
-    font-size:2vw;
-  }
-  .form button:hover{
-    background:rgba(0, 136, 169, 0.8);
-  }
 
+                    /*Navigation bar styles*/
 
-/*Navigation */
 header {
-    background-color: #24252a;
-    border-radius: 20px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 1; 
-    left: 50%;
-    transform: translateX(-50%); 
-}
-.nav_links {
-    list-style: none;
-    display: flex;
-    padding: 0%;
-    font-size:0.5vw;
-    
-}
-.nav_links li {
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-.nav_links li a 
-{
-    color: #edf0f1;
-    transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover {
-    color: #0088a9;
-}
-
-.nav {
-    order: 1;
-}
-.Ru {
-    order: 2;
-}
-
-
-
-
-/*New Gen Banana Pad Image */
-.banana_img1 {
-    display: flex;
-    width: 87ch;
-    z-index: 3;
-}
-
-/*Its discription */
-
-#info{
-    background-color: #24252a;
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-    display:none;
-}
-
-#info div{
-    color: #222;
-    font-size:1vw;
-    z-index: 1;
-    display: flex;
-    padding: 0% 10%;
-    color: #edf0f1;
-}
-#info a{
-    color: #222;
-    font-size:1vw; 
-    z-index: 1;
-    display: flex;
-    padding: 0% 10%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Old Gen Banana Pad Image */
-.banana_img {
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1100px;
-    width: 55%;
-    float: right;
-}
-.product1 {
-  position: relative;
-  margin-top: 2%;
-}
-.product1 :nth-child(4){
-    position: relative;
-    margin-top: 10%;
+  background-color: #24252a;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1; 
+  left: 50%;
+  transform: translateX(-50%); 
+  list-style: none;
+  }
+  .navbar {
+  list-style: none;
+  display: flex;
+  }
+  .navbar a {
+  text-decoration: none;
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  .dropdown .dropbtn { 
+  border: none;
+  outline: none;
+  color: #edf0f1;
+  background-color: #24252a;
+  border-radius: 20px;
+  }
+  .navbar a:hover,  .dropdown-content a:hover,.dropdown:hover .dropbtn {
+  color: #0088a9;
+  transition: all 0.3s ease 0s;
+  background-color: #edf0f1;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  }
+  .dropdown-content a {
+  background-color: #24252a;
+  text-decoration: none;
+  display: block;
+  }
+  .dropdown:hover .dropdown-content {
+  display: block;
   }
 
-/*Its discription */
-.pod1 {
-    color: #222;
-    font-size:3vw;
-    align-items: center;
-    padding-left: 2%;
+  
+                        /*iPad page styles*/
+
+/*New Generation Banana Pad Image */
+.Banana_Pad_Pro {
+display: flex;
+width: 87ch;
+z-index: 3;
 }
-.pod1_ {
-    color: #222;   
-    font-size:3vw;
-    align-items: center;
-    padding-left: 2%;
-}
-
-
-
-
-
-/*Old Gen 2ndBanana Pad Image */
-.banana_img2 {
-    display: block;
-    margin: auto;
-    max-width: 1500px;
-    width: 50%;
-    float: left;
-}
-.product2 {
-  float: left;
-  margin-top: 2%;
-}
-/*Its discription */
-.pod2 {
-    color: #222;
-    font-size:3.5vw;
-    float: right;
-    margin-right: 8.4%;
-    
-}
-.pod21 {
-    color: #222;   
-    font-size:3vw;
-    float: Right;
-    margin-right: 7.5%;
-}
-
-
-
-
-
-
-
-
-
-/*ALL The Buttons of the page */
-
-.bottom-btn1 {
-    padding: 5px 5px;
-    background-color: rgba(0, 136, 169, 1);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #edf0f1;
-    
-}
-
-.bottom-btn2 {
-    color: rgba(0, 136, 169, 1);
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    border: none;
-    background-color: white;
-    text-decoration: none;
-}
-
-.bottom-btn {
-    padding: 5px 5px;
-    background-color: rgba(0, 136, 169, 1);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    justify-content: flex;
-    margin-top: 15%;
-    float: left;
-    margin-left: 1%;
-    color: #edf0f1;
-}
-
-.bottom-btn:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
-.bottom-btn1:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*This is for the animation in the banana page */
 
 @keyframes showTopText {
-    0% {
-        transform: translate3d(0, 100%, 0);
-    }
-    40%,
-    60% {
-        transform: translate3d(0, 50%, 0);
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+0% {
+transform: translate3d(0, 100%, 0);
+}
+40%,
+60% {
+transform: translate3d(0, 50%, 0);
+}
+100% {
+transform: translate3d(0, 0, 0);
+}
 }
 @keyframes showBottomText {
-    0% {
-        transform: translate3d(0, -100%, 0);
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+0% {
+transform: translate3d(0, -100%, 0);
+}
+100% {
+transform: translate3d(0, 0, 0);
+}
 }
 .animated-title {
-    color: #222;
-    left: 32%;
-    position: absolute;
-    overflow: hidden;
-    width: 35%;
-    height: 40vmin;
+color: #222;
+left: 32%;
+position: absolute;
+overflow: hidden;
+width: 35%;
+height: 40vmin;
+display: flex;
+top: 25ch;
 }
 .animated-title > div {
-    height: 50%;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    color: #222;
+height: 50%;
+overflow: hidden;
+position: absolute;
+width: 100%;
+color: #222;
 }
 .animated-title > div div {
-    font-size:4vw;
-    position: absolute;
-    color: #222;
+font-size:4vw;
+position: absolute;
+color: #222;
 }
-
 .animated-title > div div span {
-    display: block;
-    color: #222;
-    font-size:3vw;
+display: block;
+color: #222;
+font-size:3vw;
 }
-
 .animated-title > div.text-top {
-    border-bottom: 0.5vw solid #000;
-    display: block;
-    top: 0;
+border-bottom: 0.5vw solid #000;
+display: block;
+top: 0;
 }
-
 .animated-title > div.text-top div {
-    animation: showTopText 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    bottom: 0;
-    transform: translate(0, 100%);
+animation: showTopText 1s;
+animation-delay: 0.5s;
+animation-fill-mode: forwards;
+bottom: 0;
+transform: translate(0, 100%);
 }
-
 .animated-title > div.text-top div div:first-child {
-    color: #222;
-    position: absolute;
+color: #222;
+position: absolute;
 }
 .animated-title > div.text-bottom {
     bottom: 0;
 }
 .animated-title > div.text-bottom div {
-    animation: showBottomText 0.5s;
-    animation-delay: 1.8s;
-    animation-fill-mode: forwards;
-    top: 0;
-    transform: translate(0, -100%);
+animation: showBottomText 0.5s;
+animation-delay: 1.8s;
+animation-fill-mode: forwards;
+top: 0;
+transform: translate(0, -100%);
+}
+
+/*learn more button under the animation */
+.Banana_Pad_Pro_bottom-btn {
+padding: 5px 5px;
+background-color: rgba(0, 136, 169, 1);
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+display: flex ;
+width: 35%;
+margin-top: 20%;
+color: #edf0f1;
+}
+.Banana_Pad_Pro_bottom-btn:hover {
+background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*everything uses this classes*/
+*{
+font-family: "Montserrat", sans-serif;
+text-decoration: none;
+font-size:1.8vw;
+}
+.allin {
+margin-top: 3%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.allin > .Content {
+display: flex;
+margin: auto;
+max-width: 60%;
+}
+.leftSided {
+flex-direction: row;
+}
+.rightSided {
+flex-direction: row-reverse;
+}
+.image_Property{
+display: block;
+width: 30ch;
+}
+/*<br> substitutor xD*/
+p div { 
+display: block; 
+}
+
+.bottom-btn1 {
+padding: 5px 5px;
+background-color: rgba(0, 136, 169, 1);
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+color: #edf0f1;
+}
+
+.bottom-btn2 {
+color: rgba(0, 136, 169, 1);
+cursor: pointer;
+transition: all 0.3s ease 0s;
+border: none;
+background-color: white;
+text-decoration: none;
+}
+    
+.bottom-btn:hover {
+background-color: rgba(0, 136, 169, 0.8);
+}
+.bottom-btn1:hover {
+background-color: rgba(0, 136, 169, 0.8);
 }
 
 
+                        /*iPhone page styles*/
 
-
-@media screen and (max-width: 3000px){
-    .animated-title {
-  top:25%;
+.iPhone_image_Property{
+display: block;
+width: 50%;
 }
-}
-
-@media screen and (max-width: 2000px){
-.animated-title {
-top:18%;
-}
-}
-
-@media screen and (max-width: 1500px){
-.animated-title {
-top:9%;
-}
-}
-
-@media screen and (max-width: 800px){
-.animated-title {
-top:4%;
-}
-}
-
-@media screen and (max-height: 600px){
-    .animated-title {
-    top:20%;
-    }
-    .animated-title > div div span {
-        display: block;
-        color: #222;
-        font-size:3vw;
-    }
-    }
+  
 
