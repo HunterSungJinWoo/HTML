@@ -137,9 +137,9 @@ left: 32%;
 position: absolute;
 overflow: hidden;
 width: 35%;
-height: 40vmin;
+height: 50vmin;
 display: flex;
-top: 25ch;
+top: 15ch;
 }
 .animated-title > div {
 height: 50%;
@@ -189,17 +189,18 @@ transform: translate(0, -100%);
 .Banana_Pad_Pro_bottom-btn {
 padding: 5px 5px;
 background-color: rgba(0, 136, 169, 1);
-border-radius: 50px;
+border-radius: 20px;
 cursor: pointer;
 transition: all 0.3s ease 0s;
 display: flex ;
-width: 35%;
-margin-top: 20%;
+width: 45%;
+margin-top: 15%;
 color: #edf0f1;
 }
 .Banana_Pad_Pro_bottom-btn:hover {
 background-color: rgba(0, 136, 169, 0.8);
 }
+
 
 /*everything uses this classes*/
 *{
