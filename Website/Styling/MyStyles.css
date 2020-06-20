@@ -3,15 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
 
                     /*Register page styles*/
-
-.register_page{
-margin: auto;
-height: auto;
-}
 .form {
 position: relative;
+top: 2ch;
 border-radius: 40px;
-max-width: 60%;
+max-width: 40%;
 background: #FFFFFF;
 margin: auto;
 padding: 40px;
@@ -58,8 +54,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 1; 
-  left: 50%;
-  transform: translateX(-50%); 
   list-style: none;
   }
   .navbar {
@@ -268,3 +262,21 @@ width: 50%;
 }
   
 
+@media screen and (max-width: 800px) {    
+header > .navbar{
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media screen and (min-width: 801px) {    
+header{
+left: 50%;
+transform: translateX(-50%); 
+} 
+.register_page{
+  max-width: 55%;
+  margin: auto;
+  }
+}
